@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.selected{
+    background-color: black;
+    color: white;
+}
+#submit:enabled{
+    background-color: black;
+}
+.color-button.selected i{ 
+    display: block;
+    background-color: rgba(228, 217, 50, 0.641);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

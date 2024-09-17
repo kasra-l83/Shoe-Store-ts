@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="m-0 p-0 box-border">
+    <div class="signup flex flex-col items-center relative">
+      <div class="h-14 w-full flex items-center absolute left-6"><a href="/onboarding"><img src="icon/arrow-left-short.png"></a></div>
+      <img src="icon/Vector.png" alt="vector" class="absolute top-[132px]">
+      <h2 class="font-bold text-3xl text-center mb-32 font-inter absolute top-[331px]">Signup to Your Account</h2>
+      <form id="signup-form" class="form flex justify-center">
+        <img src="icon/username.png" class="w-4 z-10 absolute top-[431px] left-8"><input type="text" placeholder="Username" class="bg-gray-100 w-[90%] h-[37px] absolute top-[418px] pl-8">
+        <i style="font-size:16px" class="fa text-slate-500 z-10 absolute top-[487px] left-8">&#xf023;</i><input type="password" placeholder="Password" id="password" class="bg-gray-100 w-[90%] h-[37px] absolute top-[476px] pl-8">
+        <button type="button" id="unhide" onclick="togglePass()"><i style="font-size:24px" class="fa absolute top-[480px] right-8">&#xf06e;</i></button>
+        <button type="button" id="hide" onclick="togglePass()"><i style="font-size:24px" class="fa absolute top-[480px] right-8">&#xf070;</i></button>
+        <button class="font-inter text-sm font-medium absolute top-[540px]"><a href="/login">Login</a></button>
+        <button type="submit" id="submit" class="text-white bg-gray-400 w-[90%] rounded-3xl py-2 absolute top-[847px]">Signup</button>
+      </form>
+    </div>
+    <script type="module" src="src/main.ts"></script>
+    <script type="module" src="/src/form.ts"></script>
+    <script type="module" src="src/signup.ts"></script>
+  </body>
+</html>

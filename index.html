@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe Store</title>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="slide flex flex-col items-center w-[428px]">
+        <img src="img/shoe1.jfif" alt="shoe1" class="mb-4"/>
+        <h2 class="text-wrap font-bold text-3xl text-center mb-14">We provid high quality products just for you</h2>
+        <span class="flex justify-between px-40"></span>
+        <button class="next text-white bg-black w-[90%] rounded-3xl py-2 mt-14 ml-5" id="next1">Next</button>
+      </div>
+      <div class="slide fade flex flex-col items-center w-[428px]">
+        <img src="img/shoe2.jfif" alt="shoe2" class="mb-4"/>
+        <h2 class="text-wrap font-bold text-3xl text-center mb-14">Your satisfaction is our number one periority</h2>
+        <span class="flex justify-between px-40"></span>
+        <button class="next text-white bg-black w-[90%] rounded-3xl py-2 mt-14 ml-5" id="next2">Next</button>
+      </div>
+      <div class="slide fade flex flex-col items-center w-[428px]">
+        <img src="img/shoe3.jfif" alt="shoe3" class="mb-4"/>
+        <h2 class="text-wrap font-bold text-3xl text-center mb-10 px-5">Let's fulfill your fashion needs with shoearight now!</h2>
+        <span class="flex justify-between px-40"></span>
+        <button id="start" class="text-white bg-black w-[90%] rounded-3xl py-2 mt-10 ml-5"><a href="./login">Get Started</a></button>
+      </div>
+      <span class="flex justify-between px-40 absolute top-[800px]">
+        <button id="slide1" class="slide-button h-[3px] w-6 bg-gray-500 mr-5"></button>
+        <button id="slide2" class="slide-button h-[3px] w-6 bg-gray-500 mr-5"></button>
+        <button id="slide3" class="slide-button h-[3px] w-6 bg-gray-500"></button>
+      </span>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/onboarding.ts"></script>
+  </body>
+</html>

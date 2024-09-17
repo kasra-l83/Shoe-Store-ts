@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shoe</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="m-0 p-0 box-border">
+        <a href="/home"><img class="absolute left-6 top-4 z-10" src="icon/arrow-left-short.png"></a>
+        <div id="product" class="relative px-6"></div>
+        <div class="flex mt-10 ml-6 text-center absolute top-[725px]">
+            <h4 class="font-semibold text-[25px] mr-5">Quantity</h4>
+            <span class="flex text-2xl bg-gray-200 py-2 rounded-full">
+                <button id="remove" class="pr-7 pl-3">-</button>
+                <p id="count">1</p>
+                <button id="add" class="pl-7 pr-3">+</button>
+            </span>
+        </div>
+        <script type="module" src="/src/main.ts"></script>
+        <script type="module" src="/src/product.ts"></script>
+    </body>
+</html>
